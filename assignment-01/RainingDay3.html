@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<style>
+			.body {
+				position: absolute;
+				top: 200px;
+				left: 400px;
+				width: 250px;
+				height: 120px;
+				background: black;
+			}
+
+			.front {
+				position: absolute;
+				top: 210px;
+				left: 255px;
+				height: 0;
+				width: 120px;
+				border-bottom: 100px solid black;
+				border-left: 30px solid transparent;
+				border-right: 30px solid transparent;
+				transform: rotate(90deg);
+			}
+
+			.backcircle1 {
+				position: absolute;
+				top: 140px;
+				left: 600px;
+				width: 250px;
+				height: 250px;
+				background: white;
+				-moz-border-radius: 125px;
+				-webkit-border-radius: 125px;
+				border-radius: 125px;
+			}
+
+			.back {
+				position: absolute;
+				top: 140px;
+				left: 610px;
+				width: 250px;
+				height: 250px;
+				background: black;
+				-moz-border-radius: 125px;
+				-webkit-border-radius: 125px;
+				border-radius: 125px;
+				z-index: 2;
+
+			}
+
+			.backcircle2 {
+				position: absolute;
+				top: 150px;
+				left: 610px;
+				width: 250px;
+				height: 250px;
+				background: white;
+				border-radius: 125px;
+				z-index: 1;
+			}
+
+			.handle {
+				position: absolute;
+				top: 350px;
+				left: 640px;
+				width: 130px;
+				height: 300px;
+				-webkit-transform: skew(-20deg);
+	   			-moz-transform: skew(20deg);
+	     		-o-transform: skew(20deg);
+				background: black;
+				border-radius: 20px;
+			}
+
+			.handledetail1 {
+				position: absolute;
+				top: 500px;
+				left: 638px;
+				width: 131px;
+				height: 6px;
+				-webkit-transform: skew(-20deg);
+	   			-moz-transform: skew(20deg);
+	     		-o-transform: skew(20deg);
+				background: white;
+			}
+
+			.handledetail2 {
+				position: absolute;
+				top: 520px;
+				left: 631px;
+				width: 131px;
+				height: 6px;
+				-webkit-transform: skew(-20deg);
+	   			-moz-transform: skew(20deg);
+	     		-o-transform: skew(20deg);
+				background: white;
+			}
+
+			.handledetail3 {
+				position: absolute;
+				top: 540px;
+				left: 624px;
+				width: 131px;
+				height: 6px;
+				-webkit-transform: skew(-20deg);
+	   			-moz-transform: skew(20deg);
+	     		-o-transform: skew(20deg);
+				background: white;
+			}
+
+			.handledetail4 {
+				position: absolute;
+				top: 560px;
+				left: 617px;
+				width: 131px;
+				height: 6px;
+				-webkit-transform: skew(-20deg);
+	   			-moz-transform: skew(20deg);
+	     		-o-transform: skew(20deg);
+				background: white;
+			}
+
+			.button {
+				position: absolute;
+				top: 400px;
+				left: 635px;
+				width: 30px;
+				height: 40px;
+				-webkit-transform: skew(-20deg);
+	   			-moz-transform: skew(20deg);
+	     		-o-transform: skew(20deg);
+				background: black;
+				border-radius: 10px;
+			}
+
+			.joint{
+				position: absolute;
+				top: 652px;
+				left: 600px;
+				width: 90px;
+				height: 20px;
+				-webkit-transform: skew(-20deg);
+	   			-moz-transform: skew(20deg);
+	     		-o-transform: skew(20deg);
+				background: black;
+				border-radius: 5px;
+			}
+
+			.wire{
+				position: absolute;
+				top: 672px;
+				left: 630px;
+				width: 22.5px;
+				height: 250px;
+				background: black;
+			}
+
+			.fancircle1{
+				position: absolute;
+				top: 195px;
+				left: 660px;
+				width: 150px;
+				height: 150px;
+				background: white;
+				-moz-border-radius: 125px;
+				-webkit-border-radius: 125px;
+				border-radius: 125px;
+				z-index: 3;
+
+			}
+			
+
+			.fan1{
+				position: absolute;
+				top:220px;
+				left:685px;
+				width: 100px;
+				height:100px;
+				background: black;
+				z-index: 4;
+
+				-webkit-animation:spin 4s linear infinite;
+    			-moz-animation:spin 4s linear infinite;
+    			animation:spin 4s linear infinite;
+    		}
+
+    		.fan2 {
+    			position: absolute;
+				top:220px;
+				left:685px;
+				width: 100px;
+				height: 100px;
+				background: black;
+				z-index: 4;
+
+				-webkit-animation:spinn 4s linear infinite;
+    			-moz-animation:spinn 4s linear infinite;
+    			animation:spinn 4s linear infinite;
+    		}
+
+  
+				@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+				@keyframes spinn { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class= "body"></div>
+
+		<div class= "front"></div>
+
+
+		<div class= "backcircle1"></div>
+		<div class= "back"></div>
+		<div class= "backcircle2"></div>
+
+		<div class= "handle"></div>
+		<div class= "handledetail1"></div>
+		<div class= "handledetail2"></div>
+		<div class= "handledetail3"></div>
+		<div class= "handledetail4"></div>
+
+
+
+		<div class= "button"></div>
+		<div class= "joint"></div>
+		<div class= "wire"></div>
+
+
+		<div class= "fan1"></div>
+		<div class= "fan2"></div>
+		<div class= "fancircle1"></div>
+
+
+
+
+	</body>
+</html>

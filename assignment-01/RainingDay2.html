@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<style>
+
+			.bathtub {
+				position:absolute;
+				top: 300px;
+				left: 250px;
+				width: 500px;
+				height: 250px;
+				background: black;
+				border-radius: 400px;
+			}
+			
+			.bathoverlap{
+				position:absolute;
+				top: 300px;
+				left: 250px;
+				width: 500px;
+				height: 125px;
+				background: white;
+			}
+
+			.leftfoot{
+				position: absolute;
+				top: 552px;
+				left: 360px;
+				height: 0;
+				width: 20px;
+				border-bottom: 25px solid black;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+			}
+			
+			.rightfoot{
+				position: absolute;
+				top: 552px;
+				left: 600px;
+				height: 0;
+				width: 20px;
+				border-bottom: 25px solid black;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+			}
+
+			.bathtubedge {
+				position:absolute;
+				top: 398px;
+				left: 225px;
+				width: 550px;
+				height: 25px;
+				background: black;
+				border-radius: 400px
+			}
+
+
+			.pipe {
+				position: absolute;
+				top: 146px;
+				left: 270px;
+				width: 12px;
+				height: 250px;
+				background: black;
+			}
+
+			.pipecorner1 {
+				position: absolute;
+				top: 125px;
+				left: 269.5px;
+				width: 48px;
+				height: 24px;
+				background: black;
+				border-top-left-radius: 24px;
+  				border-top-right-radius: 24px;
+			}
+
+			.pipecorner2 {
+				position: absolute;
+				top: 137px;
+				left: 281.5px;
+				width: 24px;
+				height: 12px;
+				background: white;
+				border-top-left-radius: 12px;
+  				border-top-right-radius: 12px;
+			}
+
+			.showernozzle {
+				position: absolute;
+				top: 145px;
+				left: 293px;
+				width: 48px;
+				height: 24px;
+				background: black;
+				border-top-left-radius: 24px;
+  				border-top-right-radius: 24px;
+  				transform: rotate(345deg);
+			}
+
+			.waterdrop1 {
+				position: absolute;
+				top: 180px;
+				left: 300px;
+				width: 6px;
+				height: 12px;
+				background: black;
+  				transform: rotate(345deg);
+			}
+
+			.waterdrop2 {
+				position: absolute;
+				top: 174px;
+				left: 320px;
+				width: 6px;
+				height: 12px;
+				background: black;
+  				transform: rotate(345deg);
+			}
+
+			.waterdrop3 {
+				position: absolute;
+				top: 168px;
+				left: 340px;
+				width: 6px;
+				height: 12px;
+				background: black;
+  				transform: rotate(345deg);
+			}
+
+			.waterdrop4 {
+				position: absolute;
+				top: 200px;
+				left: 300px;
+				width: 6px;
+				height: 12px;
+				background: black;
+  				transform: rotate(345deg);
+			}
+
+			.waterdrop5 {
+				position: absolute;
+				top: 195px;
+				left: 325px;
+				width: 6px;
+				height: 12px;
+				background: black;
+  				transform: rotate(345deg);
+			}
+
+			.waterdrop6 {
+				position: absolute;
+				top: 190px;
+				left: 350px;
+				width: 6px;
+				height: 12px;
+				background: black;
+  				transform: rotate(345deg);
+			}
+
+			.switch1 {
+				position:absolute;
+				top: 381px;
+				left: 310px;
+				width: 10px;
+				height: 15px;
+				background: black;
+			}
+
+			.switch1top {
+				position:absolute;
+				top: 371.5px;
+				left: 307px;
+				width: 16px;
+				height: 8px;
+				background: black;
+			}
+
+			.switch2 {
+				position:absolute;
+				top:381px;
+				left:340px;
+				width: 10px;
+				height: 15px;
+				background: black;
+			}
+
+			.switch2top {
+				position:absolute;
+				top: 371.5px;
+				left: 337px;
+				width: 16px;
+				height: 8px;
+				background: black;
+			}
+
+			.tower1 {
+				position:absolute;
+				top: 388px;
+				left: 600px;
+				width: 65px;
+				height: 70px;
+				background: white;
+				border-radius: 20px;
+				border-style: solid;
+				border-color: black;
+				border-width: 6px;
+			}
+
+			.tower2 {
+				position:absolute;
+				top: 385px;
+				left: 596px;
+				width: 65px;
+				height: 50px;
+				background: white;
+				border-radius: 20px;
+				border-style: solid;
+				border-color: black;
+				border-width: 6px;
+			}
+
+			.bubble1 {
+				position:absolute;
+				top: 280px;
+				left: 596px;
+				width: 20px;
+				height: 20px;
+				background: white;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				border: 0.5px solid black;
+			}
+
+
+			.bubble2 {
+				position:absolute;
+				top: 200px;
+				left: 450px;
+				width: 60px;
+				height: 60px;
+				background: white;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				border: 1px solid black;
+			}
+
+
+			.bubble3 {
+				position:absolute;
+				top: 320px;
+				left: 530px;
+				width: 35px;
+				height: 35px;
+				background: white;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				border: 1px solid black;
+			}
+
+			.floor {
+				position: absolute;
+				top: 575px;
+				left: 120px;
+				width:800px;
+				height:2px;
+				background:black;
+
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+
+
+		<div class= "bathtub"></div>
+		<div class= "bathoverlap"></div>
+		<div class= "leftfoot"></div>
+		<div class= "rightfoot"></div>
+		<div class= "bathtubedge"></div>
+
+		<div class= "pipe"></div>
+		<div class= "pipecorner1"></div>
+		<div class= "pipecorner2"></div>
+
+		<div class= "showernozzle"> </div>
+		<div class= "waterdrop1"></div>
+		<div class= "waterdrop2"></div>
+		<div class= "waterdrop3"></div>
+		<div class= "waterdrop4"></div>
+		<div class= "waterdrop5"></div>
+		<div class= "waterdrop6"></div>
+
+		<div class= "switch1"></div>
+		<div class= "switch1top"></div>
+		<div class= "switch2"></div>
+		<div class= "switch2top"></div>
+
+
+		<div class= "tower1"></div>
+		<div class= "tower2"></div>
+
+		<div class= "bubble1"></div>
+		<div class= "bubble2"></div>
+		<div class= "bubble3"></div>
+
+		<div class= "floor"></div>
+
+	</body>
+</html>
+
+
