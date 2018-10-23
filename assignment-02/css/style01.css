@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+body {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  position: relative;
+  top: 220px;
+  text-align: center;
+  font-size: 150px;
+  color: white;
+  text-transform: uppercase;
+}
+
+span {
+  border-right: 10px solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
